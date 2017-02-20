@@ -1,9 +1,23 @@
+<!DOCTYPE html>
 <html ng-app="arrayApp">
 	<head>
+        <meta charset="utf-8">
+        <title>Array</title>
 		<link rel="stylesheet" href="style.css"></link>
 	</head>
 	<body ng-controller="arrayController">
-	
+        <ul>
+        <div ng-repeat = "data in arrayData">
+            <h2>Name: {{data.name}}</h2>
+            <p>Email: {{data.email}}</p>
+            <p>Start Date: {{data.dateEmployed}}</p>
+            <p>Cell: {{data.phone}}</p>
+
+
+        </ul>
+
+        <!-- {{arrayData}} -->
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
